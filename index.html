@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>enom — sites, aplicativos e sistemas</title>
+  <meta name="description" content="enom — criamos landing pages, sites, sistemas e aplicativos mobile com identidade e performance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#top" class="logo" aria-label="enom — início">enom</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Fale conosco</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Fale conosco</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="enom">
+      <div class="us-embed" data-us-project="jvR9EL4NTUbrwEnbh3Al"></div>
+      <a href="#servicos" class="hero-cta" aria-label="Ver serviços">
+        <span>Ver serviços</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <header class="section-head">
+        <p class="eyebrow">Serviços</p>
+        <h2>O que construímos</h2>
+        <p class="section-sub">Quatro frentes, uma só obsessão: detalhe.</p>
+      </header>
+
+      <div class="cards" id="cards">
+        <article class="card" tabindex="0" role="button"
+          data-title="Landing Page"
+          data-description="Páginas únicas focadas em conversão. Desenho enxuto, hierarquia cirúrgica e performance que carrega antes do usuário piscar. Do copywriting ao deploy, tudo pensado para transformar visita em decisão."
+          data-images="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80|https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&q=80|https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80"
+          data-color="#e9eef0">
+          <div class="card-media">
+            <div class="card-glyph" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="10" y="10" width="44" height="44" rx="8" stroke="currentColor" stroke-width="2"/><path d="M10 22h44M20 34h24M20 42h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">01</p>
+            <h3 class="card-title">Landing Page</h3>
+            <p class="card-desc">Conversão, clareza, velocidade.</p>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="button"
+          data-title="Site"
+          data-description="Sites institucionais e portfólios com arquitetura de informação limpa, SEO técnico, animações sob medida e CMS quando faz sentido. Uma presença digital que envelhece bem."
+          data-images="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&q=80|https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=1200&q=80|https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80"
+          data-color="#eef1f3">
+          <div class="card-media">
+            <div class="card-glyph" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="12" width="48" height="36" rx="6" stroke="currentColor" stroke-width="2"/><path d="M8 22h48M16 32h14M16 38h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">02</p>
+            <h3 class="card-title">Site</h3>
+            <p class="card-desc">Presença digital que envelhece bem.</p>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="button"
+          data-title="Sistema"
+          data-description="Plataformas web sob medida — dashboards, ERPs internos, áreas logadas, integrações com APIs e bancos de dados. Código maintível, UI coerente e uma arquitetura que escala com o time."
+          data-images="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80|https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80|https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&q=80"
+          data-color="#e8ecef">
+          <div class="card-media">
+            <div class="card-glyph" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M12 20h40v24H12z" stroke="currentColor" stroke-width="2"/><path d="M12 28h40M20 50v-6M44 50v-6M16 50h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">03</p>
+            <h3 class="card-title">Sistema</h3>
+            <p class="card-desc">Plataformas sob medida, do fluxo ao deploy.</p>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" role="button"
+          data-title="Mobile App"
+          data-description="Apps nativos e cross-platform com foco em UX fluida, desempenho real e integração completa com seus sistemas. Do protótipo à publicação nas lojas, em iOS e Android."
+          data-images="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80|https://images.unsplash.com/photo-1526045431048-f857369baa09?w=1200&q=80|https://images.unsplash.com/photo-1533228876829-65c94e7b5025?w=1200&q=80"
+          data-color="#edf0f2">
+          <div class="card-media">
+            <div class="card-glyph" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="20" y="8" width="24" height="48" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="50" r="1.8" fill="currentColor"/><path d="M28 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">04</p>
+            <h3 class="card-title">Mobile App</h3>
+            <p class="card-desc">iOS e Android com UX fluida.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <header class="section-head">
+        <p class="eyebrow">Sobre</p>
+        <h2>Somos a enom</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            A enom é um estúdio digital focado em produtos que funcionam — visualmente, tecnicamente, comercialmente.
+            Nascemos da premissa de que a web brasileira pode ser tão refinada quanto a de qualquer grande polo criativo do mundo.
+          </p>
+          <p>
+            Trabalhamos em times pequenos, com processos enxutos e sem camadas desnecessárias entre quem decide e quem cria.
+            Cada entrega carrega atenção ao detalhe, respeito ao prazo e um fundamento: fazer certo na primeira vez.
+          </p>
+          <ul class="about-stats">
+            <li><strong>100%</strong><span>projetos entregues</span></li>
+            <li><strong>+40</strong><span>produtos ativos</span></li>
+            <li><strong>9.8</strong><span>NPS médio</span></li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <header class="section-head">
+        <p class="eyebrow">Fale conosco</p>
+        <h2>Vamos tirar sua ideia da cabeça</h2>
+        <p class="section-sub">Conte um pouco sobre o projeto. Respondemos em até 24h úteis.</p>
+      </header>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome" />
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="voce@empresa.com" />
+        </div>
+        <div class="field full">
+          <label for="servico">Serviço de interesse</label>
+          <select id="servico" name="servico">
+            <option value="landing">Landing Page</option>
+            <option value="site">Site</option>
+            <option value="sistema">Sistema</option>
+            <option value="mobile">Mobile App</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sobre o que você quer conversar?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">
+          <span>Enviar mensagem</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <p class="form-feedback" id="formFeedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">enom</span>
+      <p>© <span id="year"></span> enom. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- APPLE-TV STYLE POPUP -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"></div>
+  <div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div class="modal-inner">
+      <div class="modal-carousel" id="modalCarousel" aria-label="Imagens do serviço">
+        <div class="carousel-track" id="carouselTrack"></div>
+        <div class="carousel-dots" id="carouselDots" role="tablist"></div>
+      </div>
+      <div class="modal-content">
+        <p class="modal-kicker" id="modalKicker">Serviço</p>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        <a href="#" class="btn-primary modal-cta" id="modalCta" target="_blank" rel="noopener noreferrer">
+          <span>Solicitar orçamento</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>!function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.9/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();</script>
+</body>
+</html>
