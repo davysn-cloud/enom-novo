@@ -220,15 +220,27 @@
     form.reset();
   });
 
-  /* ---------- HEADER SCROLL SHRINK ---------- */
-  let lastScroll = 0;
+  /* ---------- HEADER HERO / NORMAL TRANSITION ---------- */
   const header = $('#siteHeader');
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    if (y > 10) header.style.top = '10px';
-    else header.style.top = '16px';
-    lastScroll = y;
-  }, { passive: true });
+  const heroSection = $('.hero');
+
+  // Start in hero state if page loads at the top
+  if (heroSection) {
+    header.classList.add('header--hero');
+
+    const observer = new IntersectionObserver((entries) => {
+      const inHero = entries[0].isIntersecting;
+      header.classList.toggle('header--hero', inHero);
+      header.style.top = inHero ? '16px' : '10px';
+    }, {
+      root: null,
+      // Trigger when the bottom 20% of the hero exits the viewport
+      rootMargin: '0px 0px -80% 0px',
+      threshold: 0,
+    });
+
+    observer.observe(heroSection);
+  }
 
   /* ---------- SMOOTH SCROLL OFFSET FOR FIXED HEADER ---------- */
   $$('a[href^="#"]').forEach(link => {
