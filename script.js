@@ -149,6 +149,7 @@
       document.body.classList.remove('modal-open');
       currentCard = null;
       if (slideInterval) { clearInterval(slideInterval); slideInterval = null; }
+      modal.removeAttribute('style');
     }, 430);
   };
 
