@@ -55,6 +55,14 @@
   const getModalTargetRect = () => {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
+
+    // Mobile: near full-screen, stacked layout (image top / content bottom)
+    if (vw < 680) {
+      const w = vw - 32;
+      const h = vh - 64;
+      return { width: w, height: h, top: 32, left: 16 };
+    }
+
     const maxW = Math.min(1100, vw - 48);
     const maxH = Math.min(660, vh - 48);
     const w = Math.min(maxW, maxH * 1.7);

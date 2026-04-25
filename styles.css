@@ -732,6 +732,8 @@ img { max-width: 100%; display: block; }
   .cards { grid-template-columns: 1fr 1fr; gap: 14px; }
   .card-body { padding: 16px 16px 18px; }
   .card-title { font-size: 18px; }
+  .modal-inner { grid-template-columns: 1fr; grid-template-rows: 42% 58%; }
+  .modal-content { padding: 24px 20px 28px; overflow-y: auto; }
   .hero-cta { bottom: 32px; padding: 12px 20px; }
 }
 
