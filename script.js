@@ -25,6 +25,16 @@
   );
 
 
+  /* ---------- CARD COVER IMAGES ---------- */
+  $$('.card').forEach(card => {
+    const first = (card.dataset.images || '').split('|')[0];
+    if (!first) return;
+    const media = card.querySelector('.card-media');
+    const glyph = card.querySelector('.card-glyph');
+    media.style.background = `url('${first}') center/cover no-repeat`;
+    if (glyph) glyph.style.display = 'none';
+  });
+
   /* ---------- APPLE-TV CARD MODAL ---------- */
   const cards = $$('.card');
   const modal = $('#serviceModal');
