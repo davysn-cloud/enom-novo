@@ -211,11 +211,20 @@
   const form = $('#contactForm');
   const feedback = $('#formFeedback');
 
+  const servicoLabels = {
+    landing: 'Landing Page',
+    site: 'Site',
+    sistema: 'Sistema',
+    mobile: 'Mobile App',
+    outro: 'Outro',
+  };
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const nome = (data.get('nome') || '').toString().trim();
     const email = (data.get('email') || '').toString().trim();
+    const servico = servicoLabels[data.get('servico')] || data.get('servico');
 
     if (!nome || !email) {
       feedback.textContent = 'Preencha nome e e-mail para continuar.';
@@ -223,9 +232,16 @@
       return;
     }
 
-    feedback.textContent = `Obrigado, ${nome.split(' ')[0]}. Entraremos em contato em breve.`;
-    feedback.classList.add('success');
-    form.reset();
+    const msg =
+      `Olá! Meu nome é *${nome}* e gostaria de solicitar um orçamento.\n\n` +
+      `📧 E-mail: ${email}\n` +
+      `🛠️ Serviço de interesse: *${servico}*`;
+
+    window.open(
+      `https://wa.me/5521979120606?text=${encodeURIComponent(msg)}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
   });
 
   /* ---------- HEADER HERO / NORMAL TRANSITION ---------- */
