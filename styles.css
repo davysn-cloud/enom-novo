@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 12px 24px;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: saturate(180%) blur(18px);
@@ -102,6 +102,12 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
   position: relative;
   z-index: 1;
+  margin-right: auto;
+  transition: margin 0.6s var(--ease-out);
+}
+
+.site-header.header--hero .logo {
+  margin: 0 auto;
 }
 
 .nav-links {
