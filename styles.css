@@ -285,7 +285,7 @@ img { max-width: 100%; display: block; }
 /* ---------- CARDS ---------- */
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
@@ -302,6 +302,13 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   will-change: transform;
   outline: none;
+  grid-column: span 2;
+}
+
+.card:nth-child(1),
+.card:nth-child(2) {
+  grid-column: span 3;
+  aspect-ratio: 5 / 4;
 }
 
 .card:hover,
@@ -717,7 +724,10 @@ img { max-width: 100%; display: block; }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 960px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards { grid-template-columns: 1fr; }
+  .card { grid-column: span 1; aspect-ratio: 4 / 3; }
+  .card:nth-child(1),
+  .card:nth-child(2) { grid-column: span 1; aspect-ratio: 4 / 3; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-visual { max-width: 360px; margin: 0 auto; }
   .modal-inner { grid-template-columns: 1fr; grid-template-rows: 45% 55%; }
@@ -729,7 +739,7 @@ img { max-width: 100%; display: block; }
   .nav-toggle { display: block; }
   .section { padding: 80px 20px; }
   .contact-form { grid-template-columns: 1fr; }
-  .cards { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cards { grid-template-columns: 1fr; gap: 14px; }
   .card-body { padding: 16px 16px 18px; }
   .card-title { font-size: 18px; }
   .modal-inner { grid-template-columns: 1fr; grid-template-rows: 42% 58%; }
@@ -739,7 +749,9 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 420px) {
   .cards { grid-template-columns: 1fr; }
-  .card { aspect-ratio: 4 / 3; }
+  .card { grid-column: span 1; aspect-ratio: 4 / 3; }
+  .card:nth-child(1),
+  .card:nth-child(2) { aspect-ratio: 4 / 3; }
 }
 
 @media (prefers-reduced-motion: reduce) {
