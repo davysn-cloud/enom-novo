@@ -216,6 +216,7 @@
     site: 'Site',
     sistema: 'Sistema',
     mobile: 'Mobile App',
+    cybersecurity: 'Cybersecurity',
     outro: 'Outro',
   };
 
